@@ -1,8 +1,6 @@
-/** NAME ¬¬ BILILIGN YIBGETA
-      ID ¬¬ BDU 171828 mMKL **/
+// NAME ¬¬ BILILIGN YIBGETA
 
 #include <iostream>
-
 #include <fstream>
 #include <string>
 #include <cstdlib>
@@ -32,16 +30,16 @@ void getdata()
     cin >> student.id_bilu;
 }
 
-void toFile()
-{
-    ofstream display;
-    display.open("studlist.doc", ios::app);
-    // if (fout.is_open())
-    // {
-    display << student.id_bilu << "\t" << student.name_bilu << "\t" << student.age_bilu << "\t" << endl;
-    display.close();
-    // }
-}
+// void toFile()
+// {
+//     ofstream display;
+//     display.open("studlist.doc", ios::app);
+//     // if (fout.is_open())
+//     // {
+//     display << student.id_bilu << "\t" << student.name_bilu << "\t" << student.age_bilu << "\t" << endl;
+//     display.close();
+
+// }
 
 void find()
 {
@@ -97,7 +95,7 @@ void Grade_report()
         int score;
         int ch;
         float gradeValue;
-        // float cp;
+
     } gradeData;
     int i = 1;
     ofstream gradeFile;
