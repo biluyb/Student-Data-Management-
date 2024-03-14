@@ -185,30 +185,30 @@ void viewGrade()
     }
 }
 
-// void erase()
-// {
-//     int choice;
-//     do
-//     {
-//         cout << "\t\t\t delete informations !!!" << endl;
-//         cout << "Are you sure you want to delete informations ?" << endl;
-//         cout << "1.Yes delete" << endl;
-//         cout << "0.cancel" << endl;
-//         cin >> choice;
-//         if (choice == 0)
-//             return;
-//         else if (choice == 1)
-//         {
-//             remove("Report.doc");
-//             remove("studlist.doc");
-//             cout << "informations delete succesfully " << endl;
-//         }
-//         else
-//         {
-//             cout << "Please Enter Valid choice" << endl;
-//         }
-//     } while (choice != 0 || choice != 1);
-// }
+void erase()
+{
+    int choice;
+    do
+    {
+        cout << "\t\t\t delete informations !!!" << endl;
+        cout << "Are you sure you want to delete informations ?" << endl;
+        cout << "1.Yes delete" << endl;
+        cout << "0.cancel" << endl;
+        cin >> choice;
+        if (choice == 0)
+            return;
+        else if (choice == 1)
+        {
+            remove("Report.doc");
+            remove("studlist.doc");
+            cout << "informations delete succesfully " << endl;
+        }
+        else
+        {
+            cout << "Please Enter Valid choice" << endl;
+        }
+    } while (choice != 0 || choice != 1);
+}
 
 int menu()
 {
