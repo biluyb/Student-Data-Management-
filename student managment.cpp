@@ -18,17 +18,17 @@ struct data
 
 } student;
 
-void getdata()
-{
-    cout << "\t\t ADD NEW STUDENT" << endl;
-    cout << "please Enter student Full Name" << endl;
-    cin.ignore();
-    getline(cin, student.name_bilu);
-    cout << "please Enter student age" << endl;
-    cin >> student.age_bilu;
-    cout << "please Enter student id" << endl;
-    cin >> student.id_bilu;
-}
+// void getdata()
+// {
+//     cout << "\t\t ADD NEW STUDENT" << endl;
+//     cout << "please Enter student Full Name" << endl;
+//     cin.ignore();
+//     getline(cin, student.name_bilu);
+//     cout << "please Enter student age" << endl;
+//     cin >> student.age_bilu;
+//     cout << "please Enter student id" << endl;
+//     cin >> student.id_bilu;
+// }
 
 void toFile()
 {
