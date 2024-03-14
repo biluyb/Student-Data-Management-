@@ -58,18 +58,18 @@ void find()
     }
 }
 
-// void view()
-// {
-//     string holder;
-//     ifstream fin("studlist.doc");
-//     if (fin.is_open())
-//     {
-//         while (getline(fin, holder))
-//         {
-//             cout << holder << endl;
-//         }
-//     }
-// }
+void view()
+{
+    string holder;
+    ifstream fin("studlist.doc");
+    if (fin.is_open())
+    {
+        while (getline(fin, holder))
+        {
+            cout << holder << endl;
+        }
+    }
+}
 
 void Grade_report()
 {
