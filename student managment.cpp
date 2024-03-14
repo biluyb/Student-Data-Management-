@@ -30,16 +30,16 @@ void getdata()
     cin >> student.id_bilu;
 }
 
-// void toFile()
-// {
-//     ofstream display;
-//     display.open("studlist.doc", ios::app);
-//     // if (fout.is_open())
-//     // {
-//     display << student.id_bilu << "\t" << student.name_bilu << "\t" << student.age_bilu << "\t" << endl;
-//     display.close();
+void toFile()
+{
+    ofstream display;
+    display.open("studlist.doc", ios::app);
+    // if (fout.is_open())
+    // {
+    display << student.id_bilu << "\t" << student.name_bilu << "\t" << student.age_bilu << "\t" << endl;
+    display.close();
 
-// }
+}
 
 void find()
 {
