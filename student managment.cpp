@@ -41,22 +41,22 @@ void toFile()
 
 }
 
-void find()
-{
-    string line, name;
-    cout << "Enter student name" << endl;
-    cin >> name;
-    ifstream srch("studlist.doc");
-    if (srch.is_open())
-    {
-        while (getline(srch, line))
-        {
-            size_t pos = line.find(name);
-            if (pos != string::npos)
-                cout << line << endl;
-        }
-    }
-}
+// void find()
+// {
+//     string line, name;
+//     cout << "Enter student name" << endl;
+//     cin >> name;
+//     ifstream srch("studlist.doc");
+//     if (srch.is_open())
+//     {
+//         while (getline(srch, line))
+//         {
+//             size_t pos = line.find(name);
+//             if (pos != string::npos)
+//                 cout << line << endl;
+//         }
+//     }
+// }
 
 void view()
 {
