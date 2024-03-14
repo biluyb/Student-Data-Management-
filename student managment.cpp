@@ -71,106 +71,106 @@ void view()
     }
 }
 
-void Grade_report()
-{
-    int courseNum;
-    gradeHeader << "Student ID \t\t"
-                << " Name \t"
-                << "Course\t"
-                << "Score \t"
-                << "Credit Hour "
-                << " Grade \t"
-                << "Point" << endl;
-    gradeHeader.close();
-    gradeHeader.open("Report.doc", ios::out | ios::app);
-    cout << "How many course did you take " << endl;
-    cin >> courseNum;
+// void Grade_report()
+// {
+//     int courseNum;
+//     gradeHeader << "Student ID \t\t"
+//                 << " Name \t"
+//                 << "Course\t"
+//                 << "Score \t"
+//                 << "Credit Hour "
+//                 << " Grade \t"
+//                 << "Point" << endl;
+//     gradeHeader.close();
+//     gradeHeader.open("Report.doc", ios::out | ios::app);
+//     cout << "How many course did you take " << endl;
+//     cin >> courseNum;
 
-    struct gradeRep
-    {
-        /* structure for holding course name and grade */
-        string name;
-        string id;
-        string course, grade;
-        int score;
-        int ch;
-        float gradeValue;
+//     struct gradeRep
+//     {
+//         /* structure for holding course name and grade */
+//         string name;
+//         string id;
+//         string course, grade;
+//         int score;
+//         int ch;
+//         float gradeValue;
 
-    } gradeData;
-    int i = 1;
-    ofstream gradeFile;
-    while (i <= courseNum)
-    {
-        cout << "please Enter student First name" << endl;
-        cin >> gradeData.name;
-        cout << "please Enter student ID" << endl;
-        cin >> gradeData.id;
-        cout << "please Enter course name" << endl;
-        cin >> gradeData.course;
-        cout << "please Enter student score out of 100%" << endl;
-        cin >> gradeData.score;
-        cout << "please Enter credit hour of the course" << endl;
-        cin >> gradeData.ch;
+//     } gradeData;
+//     int i = 1;
+//     ofstream gradeFile;
+//     while (i <= courseNum)
+//     {
+//         cout << "please Enter student First name" << endl;
+//         cin >> gradeData.name;
+//         cout << "please Enter student ID" << endl;
+//         cin >> gradeData.id;
+//         cout << "please Enter course name" << endl;
+//         cin >> gradeData.course;
+//         cout << "please Enter student score out of 100%" << endl;
+//         cin >> gradeData.score;
+//         cout << "please Enter credit hour of the course" << endl;
+//         cin >> gradeData.ch;
 
-        //  grade scale
-        if (gradeData.score >= 85)
-        {
-            gradeData.grade = "A";
-            gradeData.gradeValue = 4;
-        }
-        else if (gradeData.score >= 80)
-        {
-            gradeData.grade = "A-";
-            gradeData.gradeValue = 3.75;
-        }
-        else if (gradeData.score >= 75)
-        {
-            gradeData.grade = "B+";
-            gradeData.gradeValue = 3.5;
-        }
-        else if (gradeData.score >= 70)
-        {
-            gradeData.grade = "B";
-            gradeData.gradeValue = 3;
-        }
-        else if (gradeData.score >= 65)
-        {
-            gradeData.grade = "B-";
-            gradeData.gradeValue = 2.75;
-        }
-        else if (gradeData.score >= 60)
-        {
-            gradeData.grade = "C+";
-            gradeData.gradeValue = 2.5;
-        }
-        else if (gradeData.score >= 55)
-        {
-            gradeData.grade = "C";
-            gradeData.gradeValue = 2;
-        }
-        else if (gradeData.score >= 50)
-        {
-            gradeData.grade = "C-";
-            gradeData.gradeValue = 1.75;
-        }
-        else if (gradeData.score >= 45)
-        {
-            gradeData.grade = "D";
-            gradeData.gradeValue = 1;
-        }
-        else
-        {
-            gradeData.grade = "F";
-            gradeData.gradeValue = 0;
-        }
-        gradeFile.open("Report.doc", ios::app);
-        gradeFile << gradeData.id << "  " << gradeData.name << "  " << gradeData.course << "  " << gradeData.score << "\t\t " << gradeData.ch << "\t\t  " << gradeData.grade << "\t\t  " << gradeData.gradeValue * gradeData.ch << endl;
-        i++;
+//         //  grade scale
+//         if (gradeData.score >= 85)
+//         {
+//             gradeData.grade = "A";
+//             gradeData.gradeValue = 4;
+//         }
+//         else if (gradeData.score >= 80)
+//         {
+//             gradeData.grade = "A-";
+//             gradeData.gradeValue = 3.75;
+//         }
+//         else if (gradeData.score >= 75)
+//         {
+//             gradeData.grade = "B+";
+//             gradeData.gradeValue = 3.5;
+//         }
+//         else if (gradeData.score >= 70)
+//         {
+//             gradeData.grade = "B";
+//             gradeData.gradeValue = 3;
+//         }
+//         else if (gradeData.score >= 65)
+//         {
+//             gradeData.grade = "B-";
+//             gradeData.gradeValue = 2.75;
+//         }
+//         else if (gradeData.score >= 60)
+//         {
+//             gradeData.grade = "C+";
+//             gradeData.gradeValue = 2.5;
+//         }
+//         else if (gradeData.score >= 55)
+//         {
+//             gradeData.grade = "C";
+//             gradeData.gradeValue = 2;
+//         }
+//         else if (gradeData.score >= 50)
+//         {
+//             gradeData.grade = "C-";
+//             gradeData.gradeValue = 1.75;
+//         }
+//         else if (gradeData.score >= 45)
+//         {
+//             gradeData.grade = "D";
+//             gradeData.gradeValue = 1;
+//         }
+//         else
+//         {
+//             gradeData.grade = "F";
+//             gradeData.gradeValue = 0;
+//         }
+//         gradeFile.open("Report.doc", ios::app);
+//         gradeFile << gradeData.id << "  " << gradeData.name << "  " << gradeData.course << "  " << gradeData.score << "\t\t " << gradeData.ch << "\t\t  " << gradeData.grade << "\t\t  " << gradeData.gradeValue * gradeData.ch << endl;
+//         i++;
 
-        //
-        gradeFile.close();
-    }
-}
+//         //
+//         gradeFile.close();
+//     }
+// }
 
 void viewGrade()
 {
